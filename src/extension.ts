@@ -13,9 +13,10 @@ export function activate() {
         const selection = editor.selection;
         if (selection.isEmpty) {
             if (selectWord(editor)) {
-				let breakp = editor.document.getText(editor.selection);
-				breakp = 'br ' + breakp + ' ' + editor.document.fileName;
-                vscode.env.clipboard.writeText(breakp);
+                let paragraphName = editor.document.getText(editor.selection);
+                let programName = editor.document.fileName.split('\\');
+                let bp = 'br ' + paragraphName + ' ' + programName[programName.length -1];
+                vscode.env.clipboard.writeText(bp);
             }
         } else {
             vscode.commands.executeCommand("editor.action.clipboardCopyAction");

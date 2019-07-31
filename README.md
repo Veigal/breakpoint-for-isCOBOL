@@ -4,7 +4,7 @@ CTRL + ALT + B or CTRL + Shift + P -> "Breakpoint for isCOBOL" about a paragraph
 
 ## Release Notes
 
-### 0.0.1
+### 0.0.3
 
 Initial release of "Breakpoint for isCOBOL"
 
