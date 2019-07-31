@@ -23,6 +23,7 @@ export function activate() {
         }
     });
     
+    
     function selectWord(editor: vscode.TextEditor): boolean {
         const selection = editor.selection;
         const doc = editor.document;
